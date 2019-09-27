@@ -1,0 +1,159 @@
+/* -------------------------------------------------------------------------- */
+/* BUTTON STYLES */
+/* -------------------------------------------------------------------------- */
+@mixin btn-fade {
+  transition: all 0.3s ease-in-out;
+}
+
+.ui-btn {
+  font-family: $font-primary;
+  font-size: 0.938rem;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  line-height: 0.9375rem;
+  padding: 0.6rem 0rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  // border-radius: 50%;
+  @include btn-fade;
+}
+
+.ui-btn-main {
+  background-color: $color-main;
+  border: 1px solid $color-main;
+  color: $color-white;
+
+  &:hover {
+    color: $color-white;
+    border: 1px solid lighten($color-main, 10);
+    background-color: lighten($color-main, 10);
+    text-decoration: none;
+  }
+}
+
+.ui-btn-main-ol {
+  background-color: transparent;
+  border: 1px solid $color-main;
+  color: $color-main;
+
+  &:hover {
+    color: $color-light;
+    border: 1px solid lighten($color-main, 10);
+    background-color: lighten($color-main, 10);
+    text-decoration: none;
+  }
+}
+
+.ui-btn-light {
+  background-color: $color-light;
+  border: 1px solid $color-light;
+  color: $color-dark;
+
+  &:hover {
+    color: $color-dark;
+    background-color: darken($color-light, 15);
+    border: 1px solid darken($color-light, 15);
+    text-decoration: none;
+  }
+}
+
+.ui-btn-light-accent {
+  background-color: $color-light-accent;
+  border: 1px solid $color-light-accent;
+  color: $color-white;
+
+  &:hover {
+    color: $color-white;
+    background-color: lighten($color-light-accent, 15);
+    border: 1px solid lighten($color-light-accent, 15);
+    text-decoration: none;
+  }
+}
+
+.ui-btn-dark-accent {
+  background-color: $color-dark-accent;
+  border: 1px solid $color-dark-accent;
+  color: $color-white;
+
+  &:hover {
+    color: $color-white;
+    background-color: lighten($color-dark-accent, 15);
+    border: 1px solid lighten($color-dark-accent, 15);
+    text-decoration: none;
+  }
+}
+
+.ui-btn-extra-light-accent {
+  background-color: $color-light;
+  border: 1px solid $color-light;
+  color: $color-white;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-light;
+    border: 1px solid $color-light;
+    text-decoration: none;
+  }
+}
+
+.ui-btn-dark {
+  background-color: $color-dark;
+  border: 1px solid $color-dark;
+  color: $color-white;
+
+  &:hover {
+    color: $color-white;
+    background-color: lighten($color-dark, 15);
+    border: 1px solid lighten($color-dark, 15);
+    text-decoration: none;
+  }
+}
+
+.ui-btn-light-ol {
+  background-color: transparent;
+  border: 1px solid $color-light;
+  color: $color-light;
+
+  &:hover {
+    color: $color-dark;
+    background-color: rgba($color-light, 0.5);
+    border: 1px solid rgba($color-light, 0.5);
+    text-decoration: none;
+  }
+}
+
+.ui-btn-white {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: $color-main;
+
+  &:hover {
+    color: $color-main;
+    background-color: darken(#fff, 15);
+    border: 1px solid darken(#fff, 15);
+    text-decoration: none;
+  }
+}
+
+.ui-btn-white-ol {
+  background-color: transparent;
+  border: 1px solid $color-white;
+  color: $color-white;
+
+  &:hover {
+    color: $color-main;
+    background-color: darken(#fff, 15);
+    border: 1px solid darken(#fff, 15);
+    text-decoration: none;
+  }
+}
+
+.ui-btn-group {
+  .ui-btn:not(:last-child) {
+    margin-right: 0.85rem;
+  }
+}

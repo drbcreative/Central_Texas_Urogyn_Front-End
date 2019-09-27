@@ -1,0 +1,1 @@
+"use strict";function aniMate(n){var e=document.querySelectorAll(n);window.addEventListener("scroll",function(){e.forEach(function(n){n.getBoundingClientRect().top<window.innerHeight/1.2&&n.classList.add("animate")})})}aniMate(".fade-in"),aniMate(".fade-in-left"),aniMate(".fade-in-right"),aniMate(".scale-down");

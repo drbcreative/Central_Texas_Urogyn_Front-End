@@ -1,0 +1,304 @@
+/* -------------------------------------------------------------------------- */
+/* WORDPRESS STYLES */
+/* -------------------------------------------------------------------------- */
+.breadcrumbs {
+  background: $color-dark;
+  font-family: $font-primary;
+  a {
+    color: $color-light-accent;
+    &:hover {
+      color: $color-light;
+    }
+  }
+  .current {
+    color: $color-light;
+  }
+}
+.shareme {
+  font-family: $font-primary;
+  a {
+    color: $color-main;
+    &:hover {
+      color: $color-dark;
+    }
+  }
+}
+.inner-bg {
+  background: url("../img/inner-bg@2x.jpg");
+  background-position: center;
+  background-size: cover;
+}
+/* -------------------------------------------------------------------------- */
+/* BANNER STYLES */
+/* -------------------------------------------------------------------------- */
+.banner-bg {
+  height: 400px;
+  width: 100%;
+}
+.archive-title {
+  font-variant-caps: initial;
+}
+.banner {
+  background-color: $color-main;
+}
+#banner-img-wrap {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+
+  #banner-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* POST SECTION STYLES */
+/* -------------------------------------------------------------------------- */
+#postsection {
+  padding: 40px 10px;
+
+  h1 {
+    color: $color-dark;
+    font-family: $font-primary;
+    font-size: 3.125rem; /* 50px */
+    line-height: 3rem;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $color-main;
+    font-family: $font-primary;
+    font-size: 2.1875rem; /* 35px */
+    line-height: 2.1875rem;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 80px 10px;
+  }
+}
+/* -------------------------------------------------------------------------- */
+/* PAGE SECTION STYLES */
+/* -------------------------------------------------------------------------- */
+.pagesection {
+  h2,
+  h3,
+  h4 {
+    color: $color-main;
+  }
+  p:not(a) {
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+  p:last-child() {
+    margin-bottom: 0;
+  }
+
+  a:not(.ui-btn) {
+    color: $color-main;
+  }
+
+  .map-full {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+.sec-1,
+.sec-2,
+.sec-3,
+.sec-5,
+.sec-5 {
+  min-height: 400px !important;
+  padding: 4rem 10px !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/* SECTION IMAGE STYLES */
+/* -------------------------------------------------------------------------- */
+// img {
+//   width: 100%;
+//   height: auto;
+// }
+
+/* -------------------------------------------------------------------------- */
+/* SVG Color: Topbar, footer and share */
+/* -------------------------------------------------------------------------- */
+
+.icons-topbar {
+  width: 14px;
+  height: 16px;
+
+  path {
+    fill: $color-dark;
+  }
+}
+
+.icons-topbar:hover path {
+  fill: $color-light;
+}
+
+.social-link-footer {
+  width: 13.13px;
+  height: 15px;
+  path {
+    fill: $color-light;
+  }
+}
+
+.social-link-footer:hover path {
+  fill: $color-light-accent;
+}
+
+.social-link-share {
+  width: 14px;
+  height: 16px;
+  path {
+    fill: $color-main;
+  }
+}
+
+.social-link-share:hover path {
+  fill: $color-dark;
+}
+
+.breadcrum-home {
+  width: 16px;
+  height: 14px;
+  path {
+    fill: $color-light-accent;
+  }
+}
+
+.breadcrum-home:hover path {
+  fill: $color-light;
+}
+
+.icon-close {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  path {
+    fill: $color-white;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Search Page*/
+/* -------------------------------------------------------------------------- */
+
+#open-search {
+  padding-right: 19px;
+}
+
+#search-overlay {
+  display: none;
+  background-color: rgba($color-extra-light, 0.85);
+  color: $color-black;
+  height: 100vh;
+  width: 100%;
+  z-index: 9999999;
+  padding: 170px 60px 0;
+  position: fixed;
+  top: 0;
+
+  em {
+    display: block;
+    text-align: center;
+    font-size: 120%;
+    margin-top: 30px;
+    color: $color-black;
+  }
+
+  a {
+    color: $color-black;
+    font-weight: 700;
+  }
+
+  .form-control::-webkit-input-placeholder {
+    color: $color-white;
+  }
+
+  .form-control::-moz-placeholder {
+    color: $color-white;
+    opacity: 1;
+  }
+
+  .form-control:-ms-input-placeholder {
+    color: $color-white;
+  }
+
+  .form-control:-moz-placeholder {
+    color: $color-white;
+    opacity: 1;
+  }
+}
+
+.search-results em {
+  display: block;
+  text-align: center;
+  font-size: 120%;
+  margin-bottom: 60px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Pagination */
+/* -------------------------------------------------------------------------- */
+
+.pagination {
+  display: table !important;
+  color: #5c89a9;
+
+  a {
+    margin-right: 2rem;
+    color: #a19991;
+  }
+
+  a:hover {
+    color: #2b2b2b;
+  }
+
+  .current {
+    margin-right: 2rem;
+    color: #a19991;
+  }
+
+  .dots {
+    flex: inherit;
+    margin-right: 2rem;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Form Error Box */
+/* -------------------------------------------------------------------------- */
+
+.alert-info {
+  width: 320px;
+  margin: 0 auto;
+  color: #ffffff;
+  background-color: #ff0000;
+  border-color: #bee5eb;
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      list-style: none;
+      padding: 0;
+    }
+  }
+}

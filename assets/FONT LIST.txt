@@ -1,0 +1,38 @@
+Font Families:
+  - Primary: Open Sans
+  - Secondary: Libre Franklin Semibold
+
+Topbar: Primary, 12 & 14, Regular and bold
+
+Navbar: Primary, 16, Semibold
+
+H1: Secondary, 50
+
+H2: Secondary, 45
+
+H3: Secondary, 40
+
+H4: Secondary, 30
+
+H5: Secondary, -
+
+H6: Secondary, -
+
+Buttons: Priamry, 15, Bold
+
+Lead Copy: Primary, 18, Semibold
+
+Body Copy: Primary, 18, Regular
+
+Testimonial Copy: - Primary, 25, Bold Italic
+
+Footer Header: N/A
+
+Footer Copy: ~ Body Copy
+
+Small Copy: Primary, 12, light
+
+Footer Nav: Primary, 18, Regular
+
+Bottom Footer Copy: Primary, 16, Light
+

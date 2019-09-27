@@ -1,0 +1,173 @@
+/* -------------------------------------------------------------------------- */
+/* Typography */
+/* -------------------------------------------------------------------------- */
+@import "https://use.fontawesome.com/releases/v5.4.1/css/all.css";
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,300i,400,400i,500,500i,600,600i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap');
+
+$font-primary: 'Open Sans',
+sans-serif;
+$font-secondary: 'Libre Franklin',
+sans-serif;
+
+// General Font Setup
+// Headers
+h1,
+h2,
+h3,
+h4,
+h5 h6 {
+  margin: 0 !important;
+}
+
+/* Primary Header */
+h1 {
+  //Not used on this project
+  font-family: $font-secondary;
+  font-size: 3.125rem;
+  line-height: 3.125rem;
+  font-weight: 600;
+
+  &.is-bold {
+    font-weight: 700;
+  }
+
+  &.is-italic {
+    font-style: italic;
+  }
+}
+
+h2 {
+  font-family: $font-secondary;
+  font-size: 2.8125rem;
+  line-height: 2.8125rem;
+  font-weight: 600;
+
+
+  &.is-italic {
+    font-style: italic;
+  }
+}
+
+h3 {
+  font-family: $font-secondary;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+
+  &.is-italic {
+    font-style: italic;
+  }
+
+  &.is-light {
+    font-weight: 300;
+  }
+}
+
+h4 {
+  font-family: $font-secondary;
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  font-weight: 600;
+}
+
+/* All Other Headers */
+h5,
+h6 {
+  font-family: $font-secondary;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0;
+}
+
+
+//Body Text
+.body-copy {
+  font-size: 1.125rem;
+  line-height: calc(1.125rem * 1.67);
+  font-family: $font-primary;
+  font-weight: 400;
+
+  &.is-bold {
+    font-weight: 700;
+  }
+}
+
+/* Lead Text (hero) */
+.lead-copy {
+  font-size: 1.125rem;
+  line-height: calc(1.125rem * 1.67);
+  font-family: $font-primary;
+  font-weight: 600;
+}
+
+/* Footer2 Text */
+.small-copy {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: calc(12px * 1.5);
+  font-family: $font-primary;
+
+  &.is-semibold {
+    font-weight: 600;
+  }
+
+  &.is-bold {
+    font-weight: 700;
+  }
+}
+
+.models-text {
+  font-family: $font-primary;
+  font-size: 9px;
+  line-height: 0;
+  color: $color-white;
+  opacity: .4;
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  padding: 0;
+  margin: 0;
+  font-variant-caps: all-small-caps;
+}
+
+/* Text Modifiers */
+.wrap-75 {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+input {
+  font-family: $font-primary;
+  font-weight: 300;
+}
+
+
+
+
+// Font Size Breakpoints
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 250% !important;
+  }
+
+  h2 {
+    font-size: 200%;
+  }
+
+  // h1 {
+  //   line-height: 2rem;
+  // }
+
+  // h2,
+  // h3 {
+  //   line-height: 2rem;
+  // }
+}

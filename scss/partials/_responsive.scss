@@ -1,0 +1,244 @@
+/* -------------------------------------------------------------------------- */
+/* RESPONSIVE MEDIA QUERIES */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* SMALL BREAKPOINT (Landscape Phones and Up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 576px) {
+  .ui-btn {
+    display: inline-flex;
+    width: auto;
+    padding: 0.8rem 0.5rem;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* MEDIUM BREAKPOINT (Tablets 768px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+  .ui-btn {
+    display: inline-flex;
+    min-width: 220px;
+  }
+
+  .navbar {
+    padding: 1rem .5rem;
+  }
+
+  /* TOPBAR ***************************************************************** */
+  .topbar {
+    .containerish {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr;
+      padding: 0.2rem 0;
+
+      .col-left {
+        grid-row: 1;
+        grid-column: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .col-right {
+        grid-row: 1;
+        grid-column: 2;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  /* HERO ******************************************************************* */
+
+}
+
+/* -------------------------------------------------------------------------- */
+/* LARGE BREAKPOINT (Desktops 992px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 992px) {
+  .ui-btn {
+    display: inline-flex;
+    width: auto;
+    padding: 0.8rem 0.5rem;
+    width: 225px;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  /* TOPBAR ***************************************************************** */
+  .topbar {
+    .containerish {
+      grid-template-columns: max-content 1fr max-content;
+      // padding: 0.2rem 1rem;
+
+      .col-left {
+        grid-row: 1;
+        grid-column: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .col-right {
+        grid-row: 1;
+        grid-column: 3;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  /* NAVBAR ***************************************************************** */
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+
+  .nav-wrapper {
+    background-image: linear-gradient(to right, rgba($color-white, 0), rgba($color-white, .9));
+    position: relative;
+    transition: all .3s ease-in-out;
+
+    &.show {
+      background: $color-white !important;
+      transition: all .3s ease-in-out;
+      box-shadow: 0 3px 6px rgba($color-black, .06);
+    }
+
+    .container {
+      position: relative;
+
+      .navbar {
+        .navbar-brand {
+          display: none;
+        }
+      }
+
+      .desktop-logo {
+        position: absolute;
+        left: 25px;
+        top: 25px;
+        width: 155.6px;
+        height: 167.74px;
+        z-index: 999;
+        display: block;
+      }
+    }
+  }
+
+  /* HERO ******************************************************************* */
+
+
+  /* SEARCH ***************************************************************** */
+  .search {
+    // background: $color-light;
+    padding: 40px 20px;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: max-content 1fr max-content;
+      grid-gap: 1rem;
+      align-items: center;
+
+      .form-control {
+        border-radius: 0;
+        margin-bottom: 0;
+      }
+
+      .form-control:not(button) {
+        border: 1px solid #ededed;
+      }
+
+      ::placeholder {
+        color: #3e3a42;
+        font-family: $font-primary;
+        font-size: 15px;
+      }
+    }
+  }
+
+
+
+  /* TESTIMONIAL ************************************************************ */
+  .testimonial {
+    padding: 40px 40px;
+    position: relative;
+    height: 75vh;
+    max-height: 777px;
+    display: flex;
+    align-items: flex-end;
+
+    &::before {
+      background: rgba($color-main, .0);
+    }
+
+    .containerish {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+
+
+
+  /* FOOTER ***************************************************************** */
+}
+
+/* -------------------------------------------------------------------------- */
+/* EXTRA LARGE BREAKPOINT (Large Desktops 1200px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 1200px) {
+
+  /* TOPBAR ******************************************************* */
+  .topbar {
+
+    .containerish {
+
+      .col-mid {
+        display: flex;
+        grid: 2;
+        justify-content: center;
+      }
+
+      .topbar-link {
+        // margin-right: 1rem;
+        display: inline-flex;
+      }
+
+      // padding: 0.2rem 2rem;
+    }
+  }
+
+  /* NAVBAR ***************************************************************** */
+  .nav-wrapper {
+    .container {
+      .navbar {
+        padding: .3rem 0 !important;
+      }
+    }
+  }
+
+  .nav-item {
+    margin-right: 1.5rem;
+  }
+
+  /* HERO ******************************************************************* */
+
+}
+
+/* -------------------------------------------------------------------------- */
+/* MACBOOK PRO 15" BREAKPOINT (Large Desktops 1400px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 1400px) {}
+
+/* -------------------------------------------------------------------------- */
+/* SUPER LARGE BREAKPOINT (IMAC STATUS 1900px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 1900px) {}
