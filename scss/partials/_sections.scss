@@ -1,3 +1,87 @@
 /* -------------------------------------------------------------------------- */
 /* SECTION STYLES */
 /* -------------------------------------------------------------------------- */
+/* MISC ********************************************************************* */
+.title-bar {
+  height: 5px;
+  width: 83px;
+  background: $color-main;
+  margin-bottom: 1.5rem;
+}
+
+/* HERO ********************************************************************* */
+.hero {
+  position: relative;
+
+  .containerish {
+    height: 85vh;
+    padding: 40px 20px;
+    background: url('../../img/hero-bg@2x.jpg') center / cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba($color-white, .85);
+    }
+
+    .section-info {
+      width: 100%;
+      max-width: 741px;
+      z-index: 20;
+    }
+
+    .event-ol {
+      background: rgba($color-dark, .8);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: auto;
+      padding: 1rem;
+
+      .event-title {
+        font-family: $font-primary;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 18px;
+      }
+
+      .event-copy {
+        font-family: $font-primary;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 11px;
+
+        &.is-italic {
+          font-style: italic;
+        }
+      }
+
+      .event-btn {
+        color: $color-dark;
+        font-family: $font-primary;
+        font-size: 10px;
+        font-weight: 700;
+        background: $color-white;
+        padding: .3rem 1rem;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+          background: rgba($color-main, .5);
+          color: $color-white;
+          text-decoration: none;
+          transition: all .3s ease-in-out;
+        }
+      }
+    }
+  }
+
+}

@@ -2,6 +2,22 @@ section {
   overflow: hidden;
 }
 
+main {
+  padding-top: 7rem;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 110.28px;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding-top: 116.68px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 136px;
+  }
+}
+
 .containerish {
   width: 100%;
   max-width: 1300px;
