@@ -7,6 +7,7 @@
   width: 83px;
   background: $color-main;
   margin-bottom: 1.5rem;
+  display: block;
 }
 
 /* HERO ********************************************************************* */
@@ -84,4 +85,49 @@
     }
   }
 
+}
+
+/* SEARCH ******************************************************************* */
+.search {
+  background: $color-white;
+  padding: 40px 20px;
+
+  .containerish {
+    display: grid;
+
+    .form-control {
+      border-radius: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-control:not(button) {
+      border: 1px solid #ededed;
+    }
+
+    ::placeholder {
+      color: #3e3a42;
+      font-family: $font-primary;
+      font-size: 15px;
+    }
+  }
+}
+
+/* DAVINCI ****************************************************************** */
+.davinci {
+  background: url('../../img/davinci-bg@2x.jpg') center / cover;
+  padding: 40px 20px;
+
+  .containerish {
+    .section-img {
+      width: 100%;
+      height: auto;
+    }
+
+    .section-info {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }

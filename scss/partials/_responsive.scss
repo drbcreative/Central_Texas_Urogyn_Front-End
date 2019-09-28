@@ -47,6 +47,22 @@
     }
   }
 
+  /* DAVINCI **************************************************************** */
+  .davinci {
+    background: url('../../img/davinci-bg@2x.jpg') center / cover;
+    padding: 40px 20px;
+
+    .containerish {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .section-info {
+        margin-top: 3rem;
+        max-width: 800px;
+      }
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -288,6 +304,11 @@
     .containerish {
       padding: .5rem 0;
     }
+  }
+
+  /* DAVINCI **************************************************************** */
+  .davinci {
+    padding: 80px 20px;
   }
 
 }
