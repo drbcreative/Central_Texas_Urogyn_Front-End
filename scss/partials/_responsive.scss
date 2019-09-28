@@ -60,6 +60,29 @@
       .section-info {
         margin-top: 3rem;
         max-width: 800px;
+
+        .ui-btn-group {
+          align-self: center;
+        }
+      }
+    }
+  }
+
+  /* BIO ******************************************************************** */
+  .bio {
+    padding: 40px 0;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 75%;
+      justify-content: center;
+
+      .dr-img-container {
+        height: 70vh;
+      }
+
+      .section-info {
+        padding: 40px 0;
       }
     }
   }
@@ -195,7 +218,25 @@
     }
   }
 
+  /* BIO ******************************************************************** */
+  .bio {
+    padding: 0;
 
+    .containerish {
+      display: grid;
+      grid-template-columns: 1.5fr 2fr;
+      grid-column-gap: 1rem;
+      align-items: center;
+
+      .dr-img-container {
+        height: 55vh;
+      }
+
+      .section-info {
+        padding: 0 20px;
+      }
+    }
+  }
 
   /* TESTIMONIAL ************************************************************ */
   .testimonial {
@@ -265,6 +306,19 @@
     }
   }
 
+  /* BIO ******************************************************************** */
+  .bio {
+    .containerish {
+      .dr-img-container {
+        height: 75vh;
+      }
+
+      .section-info {
+        padding: 0 40px;
+      }
+    }
+  }
+
 }
 
 /* -------------------------------------------------------------------------- */
@@ -295,7 +349,6 @@
         display: flex;
         justify-content: flex-end;
       }
-
     }
   }
 
@@ -311,9 +364,39 @@
     padding: 80px 20px;
   }
 
+  /* BIO ******************************************************************** */
+  .bio {
+    padding: 80px 0;
+
+    .containerish {
+
+      .dr-img-container {
+        height: 85vh;
+      }
+
+      .section-info {
+        padding: 0 40px;
+      }
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */
 /* SUPER LARGE BREAKPOINT (IMAC STATUS 1900px and up) */
 /* -------------------------------------------------------------------------- */
-@media screen and (min-width: 1900px) {}
+@media screen and (min-width: 1900px) {
+
+  /* BIO ******************************************************************** */
+  .bio {
+    .containerish {
+
+      .dr-img-container {
+        height: 55vh;
+      }
+
+      .section-info {
+        padding: 0 40px;
+      }
+    }
+  }
+}

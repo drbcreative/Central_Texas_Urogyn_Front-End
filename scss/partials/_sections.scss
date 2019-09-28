@@ -128,6 +128,27 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      .ui-btn-group {
+        align-self: stretch;
+      }
+    }
+  }
+}
+
+/* BIO ********************************************************************** */
+.bio {
+  .containerish {
+    display: grid;
+
+    .dr-img-container {
+      background: url('../../img/dr-img@2x.jpg') center / cover;
+      width: 100%;
+      height: 70vh;
+    }
+
+    .section-info {
+      padding: 40px 20px;
     }
   }
 }
