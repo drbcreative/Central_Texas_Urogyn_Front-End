@@ -1,4 +1,22 @@
-.container {
-  width: 95%;
-  max-width: 1200px;
+section {
+  overflow: hidden;
+}
+
+.containerish {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+
+
+}
+
+.section-info {
+  .title-bg {
+    height: 126px;
+    width: 125.75px;
+    opacity: .15;
+    position: absolute;
+    top: -45px;
+    left: -45px;
+  }
 }

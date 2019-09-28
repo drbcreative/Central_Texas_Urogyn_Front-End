@@ -1,0 +1,87 @@
+.nav-wrapper {
+  background: $color-white;
+  position: relative;
+  box-shadow: 0 3px 6px rgba($color-dark, .16);
+
+  &.show {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.navbar {
+  .nav-logo {
+    width: 200px;
+    height: auto;
+  }
+}
+
+.nav-item {
+  margin-right: 0.7rem;
+
+  .nav-link {
+    font-family: $font-primary !important;
+    color: $color-dark !important;
+    font-size: 0.8125rem;
+    font-weight: 700;
+
+    &:hover {
+      color: $color-main !important;
+    }
+  }
+}
+
+.nav-item .nav-link:last-child {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+.nav-item.nav-divider {
+  position: relative;
+
+  &::after {
+    content: url('../img/nav-sep-line.png');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    opacity: 1;
+  }
+}
+
+.nav-item:last-child {
+  margin-right: 0 !important;
+
+  .nav-link {
+    margin-right: 0;
+  }
+}
+
+.dropdown-menu {
+  background-color: rgba($color-light, 1);
+  border-color: transparent;
+  border: none;
+  margin-top: 0 !important;
+
+  .dropdown-item {
+    color: $color-dark;
+    font-family: $font-primary;
+    font-weight: 400;
+
+    &:hover {
+      background-color: transparent;
+      color: $color-main;
+    }
+
+    &:focus {
+      background: transparent;
+    }
+  }
+}
+
+.dropdown-toggle::after {
+  border: none !important;
+  margin-left: 0 !important;
+}

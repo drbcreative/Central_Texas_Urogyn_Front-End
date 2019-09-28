@@ -23,34 +23,10 @@
   }
 
   .navbar {
-    padding: 1rem .5rem;
+    padding: .4rem .5rem;
   }
 
-  /* TOPBAR ***************************************************************** */
-  .topbar {
-    .containerish {
-      display: grid;
-      grid-template-rows: auto;
-      grid-template-columns: 1fr;
-      padding: 0.2rem 0;
 
-      .col-left {
-        grid-row: 1;
-        grid-column: 1;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-      }
-
-      .col-right {
-        grid-row: 1;
-        grid-column: 2;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-      }
-    }
-  }
 
   /* HERO ******************************************************************* */
 
@@ -75,25 +51,23 @@
 
   /* TOPBAR ***************************************************************** */
   .topbar {
+    padding: .2rem 1rem;
+
     .containerish {
       grid-template-columns: max-content 1fr max-content;
-      // padding: 0.2rem 1rem;
+      align-items: center;
 
-      .col-left {
-        grid-row: 1;
-        grid-column: 1;
+
+      .col-mid {
         display: flex;
-        align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
+
+        p {
+          margin: 0;
+          text-align: center;
+        }
       }
 
-      .col-right {
-        grid-row: 1;
-        grid-column: 3;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-      }
     }
   }
 
@@ -103,35 +77,33 @@
   }
 
   .nav-wrapper {
-    background-image: linear-gradient(to right, rgba($color-white, 0), rgba($color-white, .9));
     position: relative;
-    transition: all .3s ease-in-out;
+
+    .containerish {
+      padding: .2rem 1rem;
+    }
+  }
+
+  .navbar {
+    .nav-logo {
+      max-width: 339.31px;
+      max-height: 93.16px;
+      transition: all .3s ease-in-out;
+
+      &.show {
+        max-width: 250px;
+        max-height: auto;
+        transition: all .3s ease-in-out;
+      }
+    }
 
     &.show {
-      background: $color-white !important;
-      transition: all .3s ease-in-out;
-      box-shadow: 0 3px 6px rgba($color-black, .06);
+      padding: 0;
     }
+  }
 
-    .container {
-      position: relative;
-
-      .navbar {
-        .navbar-brand {
-          display: none;
-        }
-      }
-
-      .desktop-logo {
-        position: absolute;
-        left: 25px;
-        top: 25px;
-        width: 155.6px;
-        height: 167.74px;
-        z-index: 999;
-        display: block;
-      }
-    }
+  .nav-item {
+    margin-right: 1rem;
   }
 
   /* HERO ******************************************************************* */
@@ -196,37 +168,16 @@
 /* -------------------------------------------------------------------------- */
 @media screen and (min-width: 1200px) {
 
-  /* TOPBAR ******************************************************* */
-  .topbar {
-
-    .containerish {
-
-      .col-mid {
-        display: flex;
-        grid: 2;
-        justify-content: center;
-      }
-
-      .topbar-link {
-        // margin-right: 1rem;
-        display: inline-flex;
-      }
-
-      // padding: 0.2rem 2rem;
-    }
-  }
-
   /* NAVBAR ***************************************************************** */
   .nav-wrapper {
-    .container {
-      .navbar {
-        padding: .3rem 0 !important;
-      }
-    }
+    padding: 0;
   }
 
-  .nav-item {
-    margin-right: 1.5rem;
+  .navbar {
+    .nav-logo {
+      width: 270.97px;
+      height: 73.83px;
+    }
   }
 
   /* HERO ******************************************************************* */
@@ -236,7 +187,43 @@
 /* -------------------------------------------------------------------------- */
 /* MACBOOK PRO 15" BREAKPOINT (Large Desktops 1400px and up) */
 /* -------------------------------------------------------------------------- */
-@media screen and (min-width: 1400px) {}
+@media screen and (min-width: 1400px) {
+
+  /* TOPBAR ***************************************************************** */
+  .topbar {
+    padding: .2rem 1rem;
+
+    .containerish {
+      grid-template-columns: 1fr max-content 1fr;
+      align-items: center;
+
+
+      .col-mid {
+        display: flex;
+        justify-content: center;
+
+        p {
+          margin: 0;
+          text-align: center;
+        }
+      }
+
+      .col-right {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+    }
+  }
+
+  /* NAVBAR ***************************************************************** */
+  .nav-wrapper {
+    .containerish {
+      padding: .5rem 0;
+    }
+  }
+
+}
 
 /* -------------------------------------------------------------------------- */
 /* SUPER LARGE BREAKPOINT (IMAC STATUS 1900px and up) */
