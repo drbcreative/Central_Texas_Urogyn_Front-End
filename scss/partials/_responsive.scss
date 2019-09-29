@@ -421,6 +421,25 @@
   }
 
   /* FOOTER ***************************************************************** */
+  .footer2 {
+    display: flex;
+    align-items: center;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+
+      .foot-left {
+        grid-row: 1;
+      }
+
+      .foot-right {
+        grid-row: 1;
+        justify-self: flex-end;
+      }
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */
