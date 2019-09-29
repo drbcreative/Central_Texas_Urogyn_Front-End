@@ -164,6 +164,25 @@
       }
     }
   }
+
+  /* APPOINTMENTS ----------------------------------------------------------- */
+  .appointments {
+    padding: 60px 0;
+
+    .appointment-wrapper {
+      flex: 1;
+      max-width: 865px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+
+      button {
+        grid-column: 1 / -1;
+        justify-self: center;
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -381,24 +400,6 @@
     }
   }
 
-  /* TESTIMONIAL ************************************************************ */
-  .testimonial {
-    padding: 40px 40px;
-    position: relative;
-    height: 75vh;
-    max-height: 777px;
-    display: flex;
-    align-items: flex-end;
-
-    &::before {
-      background: rgba($color-main, .0);
-    }
-
-    .containerish {
-      display: flex;
-      justify-content: flex-start;
-    }
-  }
 
   /* BLADDER BOTOX ********************************************************** */
   .bladder-botox {
@@ -564,6 +565,25 @@
         p {
           max-width: 621px;
         }
+      }
+    }
+  }
+
+  /* APPOINTMENTS ----------------------------------------------------------- */
+  .appointments {
+    padding: 80px 0;
+
+    .appointment-wrapper {
+      flex: 1;
+      max-width: 865px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+
+      button {
+        grid-column: 1 / -1;
+        justify-self: center;
+        margin-bottom: 0;
       }
     }
   }

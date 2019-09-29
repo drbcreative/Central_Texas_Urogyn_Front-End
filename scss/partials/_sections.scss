@@ -243,3 +243,77 @@
     }
   }
 }
+
+/* TESTIMONIAL ************************************************************** */
+.testimonial {
+  background: radial-gradient(#6CB4DF, #6CB4DF);
+  padding: 40px 20px;
+
+  .containerish {
+    .testimonial {
+      text-align: center;
+
+      .test-stars {
+        width: 209.71px;
+        height: 33.84px;
+      }
+
+      .test-copy {
+        font-family: $font-primary;
+        font-size: 1.5625rem;
+        line-height: 2.1875rem;
+        font-style: italic;
+        font-weight: 700;
+        max-width: 1050px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+/* APPOINTMENTS ************************************************************* */
+.appointments {
+  background: url('../../img/appointment-bg@2x.jpg') center / cover;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+
+  .form-copy {
+    text-align: center;
+
+    .title-bar {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .appointment-wrapper {
+    flex: 1;
+    padding: 2rem 1rem 1rem 1rem;
+    width: 100%;
+    max-width: 865px;
+    display: grid;
+
+    .form-copy {
+      text-align: center;
+    }
+
+    .form-control {
+      border-radius: 0;
+      height: 45px;
+    }
+
+    input:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+
+    ::placeholder {
+      font-size: .8rem !important;
+      font-family: $font-secondary !important;
+    }
+
+  }
+}
