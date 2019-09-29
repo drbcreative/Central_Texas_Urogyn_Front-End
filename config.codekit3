@@ -61,16 +61,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/css/vendor/db-animate.min-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/css/vendor/db-animate.min-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/css/vendor/db-animate.min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -212,6 +202,16 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/img/nav-divider.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/nav-divider.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/img/pelvic-mus-bg@2x.jpg": {
 		"ft": 16384,
 		"iS": 172013,
@@ -292,17 +292,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/vendor/bootstrap.bundle.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/vendor/db-animate.min-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/vendor/db-animate.min-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

@@ -5,8 +5,44 @@
 /* FOOTER 1 SECTION */
 /* -------------------------------------------------------------------------- */
 .footer-1 {
-  background: url('../../img/footer-bg@2x.jpg') center / cover;
+  background: url('../img/footer-bg@2x.jpg') center / cover;
   min-height: 300px;
+  padding: 40px 20px;
+
+  .containerish {
+    display: grid;
+    row-gap: 2rem;
+
+    .col-left {
+      .newsletter-form {
+        input {
+          width: 100%;
+          height: 35px;
+          margin-bottom: .6rem;
+        }
+      }
+    }
+
+    .col-right {
+      .footer-nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li a {
+          color: $color-white;
+          font-family: $font-primary;
+          font-size: 18px;
+          line-height: 40px;
+
+          &:hover {
+            color: $color-main;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */

@@ -17,7 +17,7 @@
   .containerish {
     height: 85vh;
     padding: 40px 20px;
-    background: url('../../img/hero-bg@2x.jpg') center / cover;
+    background: url('../img/hero-bg@2x.jpg') center / cover;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -114,7 +114,7 @@
 
 /* DAVINCI ****************************************************************** */
 .davinci {
-  background: url('../../img/davinci-bg@2x.jpg') center / cover;
+  background: url('../img/davinci-bg@2x.jpg') center / cover;
   padding: 40px 20px;
 
   .containerish {
@@ -142,7 +142,7 @@
     display: grid;
 
     .dr-img-container {
-      background: url('../../img/dr-img@2x.jpg') center / cover;
+      background: url('../img/dr-img@2x.jpg') center / cover;
       width: 100%;
       height: 70vh;
     }
@@ -155,7 +155,7 @@
 
 /* VAG THERAPY - TEMPSURE *************************************************** */
 .vag-tempsure {
-  background: url('../../img/diva-tempsure-bg@2x.jpg') center / cover;
+  background: url('../img/diva-tempsure-bg@2x.jpg') center / cover;
 
   .containerish {
     display: grid;
@@ -176,7 +176,7 @@
 
 /* LABIAPLASTY ************************************************************** */
 .labiaplasty {
-  background: url('../../img/labiaplasty-bg@2x.jpg') center left / cover;
+  background: url('../img/labiaplasty-bg@2x.jpg') center left / cover;
   padding: 40px 20px;
   display: flex;
   align-items: center;
@@ -191,7 +191,7 @@
 
 /* PELVIC REHAB ************************************************************* */
 .pelvic-rehab {
-  background: url('../../img/davinci-bg@2x.jpg') center / cover;
+  background: url('../img/davinci-bg@2x.jpg') center / cover;
   padding: 40px 20px;
 
   .containerish {
@@ -231,7 +231,7 @@
 
 /* BLADDER BOTOX ************************************************************ */
 .bladder-botox {
-  background: url('../../img/bladder-botox-bg@2x.jpg') center left / cover;
+  background: url('../img/bladder-botox-bg@2x.jpg') center left / cover;
   padding: 40px 20px;
   display: flex;
   align-items: center;
@@ -273,7 +273,7 @@
 
 /* APPOINTMENTS ************************************************************* */
 .appointments {
-  background: url('../../img/appointment-bg@2x.jpg') center / cover;
+  background: url('../img/appointment-bg@2x.jpg') center / cover;
   min-height: 300px;
   display: flex;
   flex-direction: column;

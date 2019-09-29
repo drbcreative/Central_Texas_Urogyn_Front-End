@@ -25,6 +25,7 @@
     color: $color-dark !important;
     font-size: 0.8125rem;
     font-weight: 700;
+    padding: 0 !important;
 
     &:hover {
       color: $color-main !important;
@@ -42,11 +43,11 @@
   position: relative;
 
   &::after {
-    content: url('../img/nav-sep-line.png');
+    content: url('../img/nav-divider.svg');
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -30%);
+    transform: translate(-50%, -60%);
     opacity: 1;
   }
 }
@@ -66,8 +67,9 @@
   margin-top: 0 !important;
 
   .dropdown-item {
+    font-family: $font-primary !important;
     color: $color-dark;
-    font-family: $font-primary;
+    font-size: 0.8125rem;
     font-weight: 400;
 
     &:hover {
