@@ -228,3 +228,18 @@
     }
   }
 }
+
+/* BLADDER BOTOX ************************************************************ */
+.bladder-botox {
+  background: url('../../img/bladder-botox-bg@2x.jpg') center left / cover;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+
+  .containerish {
+    .section-info {
+      width: 100%;
+      max-width: 621px;
+    }
+  }
+}

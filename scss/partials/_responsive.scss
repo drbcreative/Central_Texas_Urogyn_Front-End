@@ -91,13 +91,17 @@
   .labiaplasty {
     background: url('../../img/labiaplasty-bg@2x.jpg') center / cover;
     padding: 40px 20px;
-    height: 50vh;
+    min-height: 50vh;
     max-height: 1015px;
 
     .containerish {
       .section-info {
         width: 100%;
         max-width: 621px;
+
+        p {
+          max-width: 421px;
+        }
       }
     }
   }
@@ -138,6 +142,25 @@
 
       .section-info {
         padding: 40px 20px;
+      }
+    }
+  }
+
+  /* BLADDER BOTOX ********************************************************** */
+  .bladder-botox {
+    background: url('../../img/bladder-botox-bg@2x.jpg') center / cover;
+    padding: 40px 20px;
+    min-height: 50vh;
+    max-height: 809px;
+
+    .containerish {
+      .section-info {
+        width: 100%;
+        max-width: 621px;
+
+        p {
+          max-width: 421px;
+        }
       }
     }
   }
@@ -244,7 +267,6 @@
     }
   }
 
-
   /* SEARCH ***************************************************************** */
   .search {
     // background: $color-light;
@@ -326,6 +348,10 @@
       .section-info {
         width: 100%;
         max-width: 621px;
+
+        p {
+          max-width: 575px;
+        }
       }
     }
   }
@@ -371,6 +397,25 @@
     .containerish {
       display: flex;
       justify-content: flex-start;
+    }
+  }
+
+  /* BLADDER BOTOX ********************************************************** */
+  .bladder-botox {
+    background: url('../../img/bladder-botox-bg@2x.jpg') center / cover;
+    padding: 40px 20px;
+    min-height: 50vh;
+    max-height: 809px;
+
+    .containerish {
+      .section-info {
+        width: 100%;
+        max-width: 621px;
+
+        p {
+          max-width: 575px;
+        }
+      }
     }
   }
 
@@ -467,6 +512,10 @@
         margin-top: -14rem;
         width: 100%;
         max-width: 621px;
+
+        p {
+          max-width: 621px;
+        }
       }
     }
   }
@@ -495,6 +544,25 @@
 
         p {
           max-width: 620px;
+        }
+      }
+    }
+  }
+
+  /* BLADDER BOTOX ********************************************************** */
+  .bladder-botox {
+    background: url('../../img/bladder-botox-bg@2x.jpg') center / cover;
+    padding: 40px 20px;
+    height: 809px;
+
+    .containerish {
+      .section-info {
+        width: 100%;
+        max-width: 621px;
+        margin-top: -6rem;
+
+        p {
+          max-width: 621px;
         }
       }
     }
