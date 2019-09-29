@@ -152,3 +152,79 @@
     }
   }
 }
+
+/* VAG THERAPY - TEMPSURE *************************************************** */
+.vag-tempsure {
+  background: url('../../img/diva-tempsure-bg@2x.jpg') center / cover;
+
+  .containerish {
+    display: grid;
+
+    .col-left,
+    .col-right {
+      .section-img {
+        width: 100%;
+        height: auto;
+      }
+
+      .section-info {
+        padding: 40px 20px;
+      }
+    }
+  }
+}
+
+/* LABIAPLASTY ************************************************************** */
+.labiaplasty {
+  background: url('../../img/labiaplasty-bg@2x.jpg') center left / cover;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+
+  .containerish {
+    .section-info {
+      width: 100%;
+      max-width: 621px;
+    }
+  }
+}
+
+/* PELVIC REHAB ************************************************************* */
+.pelvic-rehab {
+  background: url('../../img/davinci-bg@2x.jpg') center / cover;
+  padding: 40px 20px;
+
+  .containerish {
+    .section-img {
+      width: 100%;
+      height: auto;
+    }
+
+    .section-info {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .ui-btn-group {
+        align-self: stretch;
+      }
+    }
+  }
+}
+
+/* INTERSTIM **************************************************************** */
+.interstim {
+  .containerish {
+    display: grid;
+
+    .section-img {
+      width: 100%;
+      height: auto;
+    }
+
+    .section-info {
+      padding: 40px 20px;
+    }
+  }
+}
