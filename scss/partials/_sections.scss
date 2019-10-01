@@ -109,6 +109,10 @@
       font-family: $font-primary;
       font-size: 15px;
     }
+
+    .ui-btn {
+      line-height: 0;
+    }
   }
 }
 
@@ -176,7 +180,7 @@
 
 /* LABIAPLASTY ************************************************************** */
 .labiaplasty {
-  background: url('../img/labiaplasty-bg@2x.jpg') center left / cover;
+  background: url('../img/labiaplasty-bg@2x.jpg') top left / cover;
   padding: 40px 20px;
   display: flex;
   align-items: center;
